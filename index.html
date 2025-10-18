@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional profile card with social links and personal information">
+    <meta name="author" content="John Doe">
+    <title>Profile Card - Stage 0 Task</title>
+     <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article data-testid="test-profile-card" role="region" aria-label="User Profile Card">
+            <div class="card-content">
+                <!-- Left Section: Avatar -->
+                <aside class="left-section">
+                    <figure data-testid="test-user-avatar-wrapper">
+                        <img 
+                            data-testid="test-user-avatar" 
+                            href="profile.jpg"
+                            alt="Profile picture of Omini, Frank"
+                            loading="lazy"
+                        >
+                    </figure>
+                </aside>
+
+                <!-- Right Section: Profile Information -->
+                <div class="right-section">
+                    <!-- Header with Name and Bio -->
+                    <header>
+                        <h1 data-testid="test-user-name">Omini, Frank</h1>
+                        <p data-testid="test-user-bio">
+                            Front End developer passionate about creating accessible and user-friendly web applications. 
+                            I love clean code, continuous learning, and contributing to open-source projects. 
+                            With over 5 years of experience in modern web technologies, I strive to build products 
+                            that make a positive impact on users' lives.
+                        </p>
+                    </header>
+
+                    <!-- Current Time Display -->
+                    <div class="time-display" role="status" aria-live="polite">
+                        <p class="time-label">Current Time (milliseconds)</p>
+                        <span data-testid="test-user-time" id="currentTime" aria-label="Current timestamp in milliseconds"></span>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <nav data-testid="test-user-social-links" aria-label="Social media links">
+                        <h2 class="social-title">Connect with me</h2>
+                        <ul class="social-links">
+                            <li>
+                                <a 
+                                    href="https://twitter.com/frankomini" 
+                                    data-testid="test-user-social-twitter"
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit Omini, Frank's Twitter profile (opens in new tab)"
+                                >
+                                    <span class="social-icon" aria-hidden="true">🐦</span>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="https://github.com/ubifranklin" 
+                                    data-testid="test-user-social-github"
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit Omini, Frank's GitHub profile (opens in new tab)"
+                                >
+                                    <span class="social-icon" aria-hidden="true">💻</span>
+                                    <span>GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="https://linkedin.com/in/frankomini" 
+                                    data-testid="test-user-social-linkedin"
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit Omini, Frank's LinkedIn profile (opens in new tab)"
+                                >
+                                    <span class="social-icon" aria-hidden="true">💼</span>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="https://instagram.com/frankkex" 
+                                    data-testid="test-user-social-instagram"
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit Omini Frank's Instagram profile (opens in new tab)"
+                                >
+                                    <span class="social-icon" aria-hidden="true">📸</span>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Hobbies Section -->
+                    <section aria-labelledby="hobbies-title">
+                        <h2 id="hobbies-title" class="section-title">
+                            <span class="section-icon" aria-hidden="true">✨</span>
+                            Hobbies & Interests
+                        </h2>
+                        <ul data-testid="test-user-hobbies">
+                            <li>💻 Coding & Development</li>
+                            <li>📚 Reading Tech Books</li>
+                            <li>🎮 Gaming</li>
+                            <li>📷 Photography</li>
+                            <li>🥾 Studying</li>
+                            <li>☕ Football</li>
+                            <li>🎵 Travelling</li>
+                        </ul>
+                    </section>
+
+                    <!-- Dislikes Section -->
+                    <section aria-labelledby="dislikes-title">
+                        <h2 id="dislikes-title" class="section-title">
+                            <span class="section-icon" aria-hidden="true">❌</span>
+                            Dislikes
+                        </h2>
+                        <ul data-testid="test-user-dislikes">
+                            <li>🐛 Bugs in Production</li>
+                            <li>📄 Poor Documentation</li>
+                            <li>🐌 Slow Internet Connection</li>
+                            <li>⚔️ Merge Conflicts</li>
+                            <li>🚫 Poor Power Supply</li>
+                            <li>💤 Poor Communication</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <p>&copy; 2025 Omini Frank. Built for Frontend Wizards Stage 0 Task.</p>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
